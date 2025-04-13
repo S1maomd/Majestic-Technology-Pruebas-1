@@ -1,13 +1,58 @@
 <!DOCTYPE html>
+<!--Le decimos al navegador que este es un archivo del tipo HTML:5-->
 <html lang="en">
+<!--Es la etiqueta "padre" del codigo. El atributo "Lang" quiere decir que la pagina va a estar en el idioma de español, esto se hace con el fin de que el usuario pueda traducir nuestra pagina-->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <!--Este atributo nos ayuda a poner caractereres especiales en nuestra pagina web. Ejemeplo: Emojis.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Esta etiqueta nos ayuda a trabajar en proyectos responsive-->
+    <meta name="descripción" content="Majestic Travels es tu agencia de viajes confiable para descubrir destinos inolvidables alrededor del mundo. Encuentra ofertas exclusivas, experiencias únicas y planes a tu medida. ¡Viaja con estilo, viaja con Majestic! " />
+    <!--Esta etiqueta nos ayuda a mostrar una descripción de nuestra pagina web en los buscadores-->
+    <meta name="robots"content="index,follow" />
+    <!--Esta etiqueta le dice a los robots de los navegadores que rastreen nuestra pagina web y la muestren en las busquedas-->
     <title>Majestic Travels</title>
+    <!--Este es el titulo de la pagina, no confundir con los h1-h6. Este es el titulo que se muestra en la pestaña del navegador-->
+    <link rel="stylesheet" href="./style.css">
+    <!--Linkea/Enlaza archivos de estilos u otros archivos que necesitemos en nuestro proyecto-->
 </head>
+
 <body>
-    <header>
-        
+   
+    <header><!--Es la parte de arriba del sitio web-->
+       
+        <nav>
+           <a href="#inicio">Inicio</a> 
+           <a href="#Destinos">Destinos</a>
+           <a href="#Nostros">Nosotros</a>
+           <a href="#Ofertas">Ofertas</a>
+           <a href="#Contacto">Contacto</a>
+        </nav><!--Es la sección de navegación de la pagina web, siempre debe ir dentro del header-->
+    
     </header>
+
+    <main><!--Main es el contenido central de la pagina web, "La parte del medio"-->
+        
+        <!--Descubre tu proximos viaje,barra de busqueda y botón "buscar"-->
+        <section>
+            <h2>Descubre tu próximo viaje</h2>
+            <input type="text" class="barra_busqueda" id="barra_busqueda_destinos" placeholder="¿Cual es tu proximo destino?">
+            <button id="botón_buscar_destinos">Buscar</button>
+        </section>
+
+
+
+    </main>
+
+    <section><!--Esta etiqueta facilita la división del sitio web por secciones, el sitio web está dividido por secciones -->
+        
+        
+        <article></article><!--Esta etiqueta se usa para el contenido independiente de la pagina. Es reutilizable -->
+
+
+    </section>
+
+
+
 </body>
 </html>
