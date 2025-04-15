@@ -1,85 +1,81 @@
 <!DOCTYPE html>
 <!--Le decimos al navegador que este es un archivo del tipo HTML:5-->
-<html lang="en">
-<!--Es la etiqueta "padre" del codigo. El atributo "Lang" quiere decir que la pagina va a estar en el idioma de español, esto se hace con el fin de que el usuario pueda traducir nuestra pagina-->
+<html lang="es">
+<!--Es la etiqueta "padre" del codigo. El atributo "lang" quiere decir que la pagina va a estar en el idioma español, esto se hace con el fin de que el usuario pueda traducir nuestra pagina-->
 <head>
     <meta charset="UTF-8" />
-    <!--Este atributo nos ayuda a poner caractereres especiales en nuestra pagina web. Ejemeplo: Emojis.-->
+    <!--Este atributo nos ayuda a poner caracteres especiales en nuestra pagina web. Ejemplo: Emojis.-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Esta etiqueta nos ayuda a trabajar en proyectos responsive-->
-    <meta name="descripción" content="Majestic Travels es tu agencia de viajes confiable para descubrir destinos inolvidables alrededor del mundo. Encuentra ofertas exclusivas, experiencias únicas y planes a tu medida. ¡Viaja con estilo, viaja con Majestic! " />
+    <meta name="descripción" content="Majestic Travels es tu agencia de viajes confiable para descubrir destinos inolvidables alrededor del mundo. Encuentra ofertas exclusivas, experiencias únicas y planes a tu medida. ¡Viaja con estilo, viaja con Majestic!" />
     <!--Esta etiqueta nos ayuda a mostrar una descripción de nuestra pagina web en los buscadores-->
-    <meta name="robots"content="index,follow" />
+    <meta name="robots" content="index,follow" />
     <!--Esta etiqueta le dice a los robots de los navegadores que rastreen nuestra pagina web y la muestren en las busquedas-->
     <title>Majestic Travels</title>
-    <!--Este es el titulo de la pagina, no confundir con los h1-h6. Este es el titulo que se muestra en la pestaña del navegador-->
+    <!--Este es ek titulo de la pagina, no confundir con los h1-h6. Este es el titulo que se muestra en la pestaña del navegador-->
     <link rel="stylesheet" href="./style.css">
-    <!--Linkea/Enlaza archivos de estilos u otros archivos que necesitemos en nuestro proyecto-->
+    <!--Linkea/enlaza archivos de estilos u otros archivos que necesitamos en nuestro proyecto-->
 </head>
 
 <body>
-   
+
     <header><!--Es la parte de arriba del sitio web-->
-       
         <nav>
-            
-            <a href="#inicio">Inicio</a> 
+            <a href="#inicio">Inicio</a>
             <a href="#Destinos">Destinos</a>
-            <a href="#Nostros">Nosotros</a>
+            <a href="#Nosotros">Nosotros</a>
             <a href="#Ofertas">Ofertas</a>
-            <a href="#Contacto">Contacto</a>  
-         
-        </nav><!--Es la sección de navegación de la pagina web, siempre debe ir dentro del header-->
-    
+            <a href="#Contacto">Contacto</a>
+        </nav><!--Es la sección de navegaciób de la pagina web, siempre debe ir dentro del header-->
     </header>
 
-    <main class="container"><!--Main es el contenido central de la pagina web, "La parte del medio"-->
-        
-        <!--Descubre tu proximos viaje,barra de busqueda y botón "buscar"-->
-        <section>
+    <main class="container"><!--Main es el contenido central de la pagina web, "la parte del medio"-->
+
+        <!-- Sección "Descubre tu próximo viaje" -->
+        <section class="busqueda-container">
             <h2 id="Descubre_viaje">Descubre tu próximo viaje</h2>
-            <input type="text" class="barra_busqueda" id="barra_busqueda_destinos" placeholder="¿Cual es tu proximo destino?">
-            <button id="botón_buscar_destinos">Buscar</button>
+
+            <div class="barra_busqueda_boton">
+                <input type="text" id="barra_busqueda_destinos" placeholder="¿Cuál es tu destino?">
+                <button id="botón_buscar_destinos">Buscar</button>
+            </div>
         </section>
 
-        <!--Sección de destinos populares-->
+        <!-- Sección "Destinos populares" -->
         <section>
             <h2 id="Destinos_populares">Destinos populares</h2>
 
-
             <div class="Imagenes-container">
-            
-                <figure id="USA">
-                <img src="/imagenes/USA.jpg" alt="Imagen de la estatua de la libertad como representación de Estados Unidos" id="USA" />
-                <figcaption>La estatua de la libertad</figcaption>
-            </figure>
+                <figure>
+                    <img src="/imagenes/Francia.jpg" alt="Imagen del arco del triunfo como representación de Francia" class="destino-img" />
+                    <figcaption>Francia</figcaption>
+                </figure>
 
-            <figure id="Mexico">
-                <img src="/imagenes/Mexico.jpg" alt="Imagen de una piramide Azteca como representación de Mexico" id="Mexico" />
-                <figcaption>Piramide Azteca</figcaption>
-            </figure>
+                <figure>
+                    <img src="/imagenes/Italia.jpg" alt="Imagen del coliseo Romano como representación de Italia" class="destino-img" />
+                    <figcaption>Italia</figcaption>
+                </figure>
 
-            <figure id="Francia">
-                <img src="/imagenes/Francia.jpg" alt="Imagen del arco del triunfo como representación de Francia" id="Francia" />
-                <figcaption>El arco del triunfo</figcaption>
-            </figure>
+                <figure>
+                    <img src="/imagenes/Mexico.jpg" alt="Imagen de una pirámide Azteca como representación de México" class="destino-img" />
+                    <figcaption>Mexico</figcaption>
+                </figure>
 
-            <figure id="Italia">
-                <img src="/imagenes/Italia.jpg" alt="Imagen del coliseo Romano como representación de Italia" id="Italia" />
-                <figcaption>El coliseo romano</figcaption>
-            </figure>
+                <figure>
+                    <img src="/imagenes/USA.jpg" alt="Imagen de la estatua de la libertad como representación de Estados Unidos" class="destino-img" />
+                    <figcaption>USA</figcaption>
+                </figure>
             </div>
-
-
         </section>
 
-
+        <!--Sección de ofertas especiales-->
+        <section class="ofertas-especiales">
+            <h2 id="ofertas-especiales">
+                Ofertas especiales
+            </h2>
+        </section>
 
     </main>
-
-    
-
-
 
 </body>
 </html>
