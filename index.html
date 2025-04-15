@@ -22,35 +22,62 @@
     <header><!--Es la parte de arriba del sitio web-->
        
         <nav>
-           <a href="#inicio">Inicio</a> 
-           <a href="#Destinos">Destinos</a>
-           <a href="#Nostros">Nosotros</a>
-           <a href="#Ofertas">Ofertas</a>
-           <a href="#Contacto">Contacto</a>
+            
+            <a href="#inicio">Inicio</a> 
+            <a href="#Destinos">Destinos</a>
+            <a href="#Nostros">Nosotros</a>
+            <a href="#Ofertas">Ofertas</a>
+            <a href="#Contacto">Contacto</a>  
+         
         </nav><!--Es la sección de navegación de la pagina web, siempre debe ir dentro del header-->
     
     </header>
 
-    <main><!--Main es el contenido central de la pagina web, "La parte del medio"-->
+    <main class="container"><!--Main es el contenido central de la pagina web, "La parte del medio"-->
         
         <!--Descubre tu proximos viaje,barra de busqueda y botón "buscar"-->
         <section>
-            <h2>Descubre tu próximo viaje</h2>
+            <h2 id="Descubre_viaje">Descubre tu próximo viaje</h2>
             <input type="text" class="barra_busqueda" id="barra_busqueda_destinos" placeholder="¿Cual es tu proximo destino?">
             <button id="botón_buscar_destinos">Buscar</button>
+        </section>
+
+        <!--Sección de destinos populares-->
+        <section>
+            <h2 id="Destinos_populares">Destinos populares</h2>
+
+
+            <div class="Imagenes-container">
+            
+                <figure id="USA">
+                <img src="/imagenes/USA.jpg" alt="Imagen de la estatua de la libertad como representación de Estados Unidos" id="USA" />
+                <figcaption>La estatua de la libertad</figcaption>
+            </figure>
+
+            <figure id="Mexico">
+                <img src="/imagenes/Mexico.jpg" alt="Imagen de una piramide Azteca como representación de Mexico" id="Mexico" />
+                <figcaption>Piramide Azteca</figcaption>
+            </figure>
+
+            <figure id="Francia">
+                <img src="/imagenes/Francia.jpg" alt="Imagen del arco del triunfo como representación de Francia" id="Francia" />
+                <figcaption>El arco del triunfo</figcaption>
+            </figure>
+
+            <figure id="Italia">
+                <img src="/imagenes/Italia.jpg" alt="Imagen del coliseo Romano como representación de Italia" id="Italia" />
+                <figcaption>El coliseo romano</figcaption>
+            </figure>
+            </div>
+
+
         </section>
 
 
 
     </main>
 
-    <section><!--Esta etiqueta facilita la división del sitio web por secciones, el sitio web está dividido por secciones -->
-        
-        
-        <article></article><!--Esta etiqueta se usa para el contenido independiente de la pagina. Es reutilizable -->
-
-
-    </section>
+    
 
 
 

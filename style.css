@@ -1,12 +1,90 @@
-#fdsf {
-    color: aliceblue;
+/*La estructura basica de una etiqueta de CSS es P(selector){ color(propiedad): red(valor de la propiedad)}*/
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.container section{
+    display: flex;
+    flex-direction: column;
 }
 
-#dsad{
-    color: aliceblue;
+
+
+/****Estilos de la parte del header****/
+
+
+nav{
+    font-size: 50px;
+    text-align: center;
+}
+a {
+    color: black;
 }
 
-#asa {
- color: #000;
- 
+
+/****Fin estilos de la parte del header****/
+
+
+
+/****Estilos del body-contenido principal de la pagina****/
+
+/*Estilos de la seccion descubre tus viajes*/
+
+#Descubre_viaje{
+    text-align: center;
+    font-size: 66px;
 }
+
+
+/*Fin estilos de la seccion descubre tus viajes*/
+
+
+/*Estilos de la seccion de destinos populares*/
+
+#Destinos_populares{
+    text-align: center;
+    font-size: 66px;
+    
+}
+
+#barra_busqueda_destinos{
+    width: 600px;
+    background-color: #B8B8B8;
+}
+
+#botón_buscar_destinos{
+    width: 600px;
+    background-color: black;
+} 
+
+
+
+.Imagenes-container{
+    display: flex;
+    flex-direction: row;
+}
+
+#USA{
+    width: 269px;
+    height: 380px;
+}
+
+#Mexico{
+    width: 269px;
+    height: 380px;
+}
+
+#Italia{
+    width: 269px;
+    height: 380px;
+}
+
+#Francia{
+    width: 269px;
+    height: 380px;
+}
+
+/*Fin de estilos de la seccion de destinos populares*/
+
+
+/****Fin del body-contenido principal de la pagina****/
