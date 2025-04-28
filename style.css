@@ -6,3 +6,10 @@ body{
   padding: 0;
   background-color: #fff;
 }
+
+.navbar{
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px 64px;
+  background-color: #e3d869;
+}
