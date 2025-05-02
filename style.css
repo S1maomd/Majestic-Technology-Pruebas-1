@@ -1,3 +1,12 @@
+/* Para hacer el reset que es eliminar los parametros de cualquier navegador colocamos el (*)*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 /*body para elegir el tipo de letra*/
 
 body{
@@ -5,16 +14,51 @@ body{
   margin: 0;
   padding: 0;
   background-color: #fff;
+
 }
 
-.navbar{
+/*Header*/
+
+header{
   display: flex;
-  justify-content: flex-end;
-  padding: 16px 64px;
-  background-color: #e3d869;
-  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: antiquewhite;
 }
 
-.nav-links{
-  
+
+/*Logo*/
+
+.logo{
+  max-width: 5rem;
+}
+
+
+ /* nav-links*/
+
+ .nav-links{
+list-style-type: none;
+display: flex;
+gap: 1rem;
+}
+
+.nav-links li a{
+  text-decoration: none;
+  color: #1c1c1c;
+}
+
+/*button*/
+
+.abrir-menu{
+  display: none;
+
+}
+
+/*Responsive del boton */
+
+@media screen and (max-width: 550px){
+  .abrir-menu{
+    display: block;
+  }
 }
