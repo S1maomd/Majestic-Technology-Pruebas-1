@@ -119,12 +119,9 @@ figcaption {
     cursor: pointer;
 }
 
-#ofertas-especiales-texto{
-    font-size: 18px;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    color: red;
-}
+
+
+
 
 /* Responsive básico */
 @media (max-width: 1024px) {
