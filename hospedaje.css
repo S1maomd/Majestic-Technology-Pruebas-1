@@ -1,0 +1,65 @@
+/*===========Fuentes de google fonts==========*/
+@import url('https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*imagenes hospedaje*/
+
+*{
+  margin: 200;
+  padding: 0;
+  font-family: lato;
+
+}
+
+h2{
+  text-align: center;
+  margin-top: 50px;
+  font-size: 2rem;
+
+}
+
+.slider-frame{
+  width: 100%;
+  height: 70%;
+  margin: 50px auto 0;
+  overflow: hidden;
+
+  animation: slide  infinite alternate ease-in-out;
+}
+
+.slider-frame ul{
+  display: flex;
+  padding: 0;
+  width: 400%;
+
+}
+
+.slider-frame li {
+  list-style: none;
+  width: 100%;
+}
+
+.slider-frame img {
+  width: 100%;
+
+}
+
+
+@keyframes slide {
+  0% {margin-left: 0%;}
+  20% {margin-left: 0%;}
+  
+  25% {margin-left: -100%;}
+  45% {margin-left: -100%;}
+  
+  50% {margin-left: -200%;}
+  70% {margin-left: -200%;}
+  
+  75% {margin-left: -300%;}
+  95% {margin-left: -300%;}
+
+
+}
+
+
+
+
