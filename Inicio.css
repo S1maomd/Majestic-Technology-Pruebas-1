@@ -88,6 +88,7 @@ img{
   margin-inline: 1.5rem; /*aplica margen horizontal (izquierda y derecha).*/  /*Así, el contenedor no queda pegado a los bordes del navegador en pantallas pequeñas.*/
 }
 
+
 .grid{
   display: grid;
   gap: 1.5rem;
