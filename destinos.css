@@ -144,14 +144,24 @@ figcaption {
 }
 
 .calificaciones {
-    border: #000000 solid 1px;
-    text-align: center;
     display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Para que se acomoden bien en pantallas pequeñas */
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 20px;
 }
 
 .calificacion{
+    flex: 1 1 300px; /* Se adaptan al ancho disponible pero no se achican demasiado */
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     font-family: "Cuprum", sans-serif;
     font-size: 17px;
+    max-width: 350px;
 }
 
 
