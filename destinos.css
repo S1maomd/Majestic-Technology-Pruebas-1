@@ -30,7 +30,7 @@ a {
     font-family:  "Montserrat Alternates", sans-serif;
     text-align: center;
     font-size: 66px;
-    font-weight: 900;
+    font-weight: 700;
 }
 
 .barra_busqueda_boton {
@@ -109,6 +109,7 @@ figcaption {
 #ofertas-especiales{
     text-align: center;
     font-size: 66px;
+    font-weight: 300;
 }
 
 #ofertas-especiales::after {
