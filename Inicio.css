@@ -80,25 +80,18 @@ img{
   height: auto;
 }
 
-/* ============= CLASES REUTILIZABLES DEL CSS ===============*/
+/*button*/
 
-/*Limitar el ancho de la pagina*/
-.container{
-  max-width: 1120px;
-  margin-inline: 1.5rem; /*aplica margen horizontal (izquierda y derecha).*/  /*Así, el contenedor no queda pegado a los bordes del navegador en pantallas pequeñas.*/
+.abrir-menu{
+  display: none;
+
 }
 
 
-.grid{
-  display: grid;
-  gap: 1.5rem;
-}
+/*Responsive del boton */
 
-section{
-  padding-block: 5rem 1rem;  /*padding-block agrega espacio vertical (arriba y abajo)*/
-}
-
-.section__title{
-  text-align: center;
-  font-size: var(--h1-font-size);
+@media screen and (max-width: 654px){
+  .abrir-menu{
+    display: block;
+  }
 }

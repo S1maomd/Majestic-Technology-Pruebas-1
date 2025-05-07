@@ -4,6 +4,10 @@
     flex-direction: column;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 /* Header */
 nav {
     font-size: 38px;
@@ -15,6 +19,8 @@ nav {
 a {
     color: black;
     text-decoration: none;
+    font-family: "Tagesschrift", system-ui;
+    font-size: 35px;
 }
 
 /* Sección "Descubre tu próximo viaje" */
@@ -67,10 +73,11 @@ a {
 
 /* Sección "Destinos populares" */
 #Destinos_populares {
-    font-family:  "Montserrat Alternates", sans-serif;;
+    font-family:  "Montserrat Alternates", sans-serif;
     text-align: center;
     font-size: 66px;
     margin-top: 80px;
+    font-weight: 500;
 }
 
 .Imagenes-container {
@@ -101,7 +108,9 @@ a {
 figcaption {
     text-align: center;
     font-size: 24px;
-    margin-top: 10px;
+    margin-top: 20px;
+    font-family: "Cuprum", sans-serif;
+    
 }
 
 /*Estilos de la sección ofertas especiales*/
@@ -109,7 +118,8 @@ figcaption {
 #ofertas-especiales{
     text-align: center;
     font-size: 66px;
-    font-weight: 300;
+    font-weight: 500;
+    font-family:  "Montserrat Alternates", sans-serif;
 }
 
 #ofertas-especiales::after {
@@ -137,15 +147,20 @@ figcaption {
     text-align: center;
     font-size: 66px;
     margin-top: 80px;
+    font-family:  "Montserrat Alternates", sans-serif;
+    font-weight: 500;
 }
 
 .calificaciones {
     border: #000000 solid 1px;
     text-align: center;
     display: flex;
-
 }
 
+.calificacion{
+    font-family: "Cuprum", sans-serif;
+    font-size: 17px;
+}
 
 
 
