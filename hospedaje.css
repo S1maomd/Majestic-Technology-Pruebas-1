@@ -15,9 +15,7 @@ h2{
   text-align: center;
   margin-top: 50px;
   font-size: 2rem;
-
 }
- a
 
  
 .slider-frame{
@@ -27,16 +25,11 @@ h2{
   aspect-ratio: 2/1;
 }
 
- 
-
 .slider-frame ul {
   display: flex;
-  padding: 0;
   width: 400%;
-  margin: 0;
   animation: slide 12s infinite;
 }
-
 
 .slider-frame li {
   list-style: none;
