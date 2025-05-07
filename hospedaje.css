@@ -6,9 +6,10 @@
 *{
   margin: 0;
   padding: 0;
-  font-family: lato;
-
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
 
 h2{
   text-align: center;
@@ -18,20 +19,22 @@ h2{
 }
 
 .slider-frame{
-  width: 500px;
-  height: 500px;
-  margin: 0;
+  width: 100%;
+  max-width: 1200px;
   overflow: hidden;
-
-  animation: slide 20s;
+  aspect-ratio: 2/1;
 }
 
-.slider-frame ul{
+ 
+
+.slider-frame ul {
   display: flex;
   padding: 0;
   width: 400%;
-
+  margin: 0;
+  animation: slide 12s infinite;
 }
+
 
 .slider-frame li {
   list-style: none;
@@ -40,9 +43,24 @@ h2{
 
 .slider-frame img {
   width: 100%;
-
+  height: 100%;
+  object-fit: cover;
 }
 
+@keyframes slide {
+  0%, 20% {
+    margin-left: 0%;
+  }
+  25%, 45% {
+    margin-left: -100%;
+  }
+  50%, 70% {
+    margin-left: -200%;
+  }
+  75%, 95% {
+    margin-left: -300%;
+  }
+}
 
 
 
