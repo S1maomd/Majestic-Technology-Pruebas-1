@@ -1,40 +1,38 @@
 /*===========Fuentes de google fonts==========*/
 @import url('https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 /*imagenes hospedaje*/
+
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
 }
 
-
-h2{
+h2 {
   text-align: center;
   margin-top: 50px;
   font-size: 2rem;
-
 }
 
 .slider-frame {
   width: 100%;
   max-width: 1200px;
-  aspect-ratio: 2 / 1; /* Alternativa moderna */
+  aspect-ratio: 2 / 1;
   overflow: hidden;
   margin: 50px auto;
 }
 
- 
-
 .slider-frame ul {
   display: flex;
-  padding: 0;
   width: 400%;
-  margin: 0;
   animation: slide 12s infinite;
+  margin: 0;
+  padding: 0;
 }
-
 
 .slider-frame li {
   list-style: none;
@@ -43,26 +41,13 @@ h2{
 
 .slider-frame img {
   width: 100%;
-
+  height: 100%;
+  object-fit: cover;
 }
-
 
 @keyframes slide {
-  0% {margin-left: 0%;}
-  20% {margin-left: 0%;}
-  
-  25% {margin-left: -100%;}
-  45% {margin-left: -100%;}
-  
-  50% {margin-left: -200%;}
-  70% {margin-left: -200%;}
-  
-  75% {margin-left: -300%;}
-  95% {margin-left: -300%;}
-
-
+  0%, 20% { margin-left: 0%; }
+  25%, 45% { margin-left: -100%; }
+  50%, 70% { margin-left: -200%; }
+  75%, 95% { margin-left: -300%; }
 }
-
-
-
-
