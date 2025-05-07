@@ -13,14 +13,13 @@
      /*Hue (matiz) → el tipo de color (rojo, verde, azul, etc.) Saturation (saturación) → qué tan intenso o apagado es el color Lightness (luminosidad) → qué tan claro u oscuro es*/
      
      --title-color: hsl(0, 0%,95%);
-     --text-color: hsl var(0, 0%)
- 
+     --text-color: hsl var(0, 0%);
+     --text-color-light: hsl(0, 0%, 60%)
+     --body
  
     }
 
-    
-
-
+  
 
  
 /*Base de la pagina (Tamaño)*/
