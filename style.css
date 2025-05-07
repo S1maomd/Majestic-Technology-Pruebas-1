@@ -67,6 +67,12 @@ gap: 1rem;
 
 }
 
+
+/*Desplazamiento suave*/
+html {
+  scroll-behavior: smooth;
+}
+
 /*Responsive del boton */
 
 @media screen and (max-width: 654px){
