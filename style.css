@@ -1,63 +1,83 @@
-/*Fuentes de google fonts*/
+/*===========Fuentes de google fonts==========*/
 @import url('https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-/*.cuprum-<uniquifier> {
-  font-family: "Cuprum", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-*/
+  /*============== variables css ===============*/
 
-/* Para hacer el reset que es eliminar los parametros de cualquier navegador colocamos el (*)*/
+  :root{  /*root para poder definir las variables*/
+   
+     --header-height: 3.5rem;
+ 
+      /*========= Colores =========*/
 
+     /*Hue (matiz) → el tipo de color (rojo, verde, azul, etc.) Saturation (saturación) → qué tan intenso o apagado es el color Lightness (luminosidad) → qué tan claro u oscuro es*/
+     
+     --title-color: hsl(0, 0%,95%);
+     --text-color: hsl var(0, 0%);
+     --text-color-light: hsl(0, 0%, 60%)
+     --body
+ 
+    }
+
+  
+
+ 
+/*Base de la pagina (Tamaño)*/
 *{
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  
 }
 
+/*=========Desplazamiento de la pagina suave==========*/
 
-/*body para elegir el tipo de letra*/
+html{
+  scroll-behavior: smooth;
+}
+ 
+/*============== variables del body y del boton input ==============*/
+body,
+button,
+input{
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  color: var(--text-color);
+}
 
 body{
-  font-family: "Cuprum", sans-serif;;
-  margin: 0;
-  padding: 0;
-  background-color: #fff;
+  background-color: var(--body-color);
+}
+  /*================ variable del boton ==================*/
+button,
+input{
+ outline: none;
+ border: none;
+ color: var(--text-color);
 
 }
 
-/*Header*/
+ /*================ Variables para la titulos subtitulos y comentarios etc ===============*/
+h1,h2,h3,h4{
+  color: var(--title-color);
+  font-family: var(--second-font);
+  font-weight: var(--font-semi-bold);
 
-header{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 2rem;
-  background-color: antiquewhite;
+}
+/*============== estilo de los links ================*/
+ul{
+  list-style: none;
 }
 
-
-/*Logo*/
-
-.logo{
-  max-width: 5rem;
-}
-
-
- /* nav-links*/
-
- .nav-links{
-list-style-type: none;
-display: flex;
-gap: 1rem;
-}
-
-.nav-links li a{
+/*================== para quitar lo azul de las letras (linea)=======================*/
+a{
   text-decoration: none;
-  color: #1c1c1c;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /*button*/
@@ -65,12 +85,6 @@ gap: 1rem;
 .abrir-menu{
   display: none;
 
-}
-
-
-/*Desplazamiento suave*/
-html {
-  scroll-behavior: smooth;
 }
 
 /*Responsive del boton */
