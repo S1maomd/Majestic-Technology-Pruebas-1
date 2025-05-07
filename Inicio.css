@@ -17,11 +17,18 @@
      --text-color-light: hsl(0, 0%, 60%);
      --body-color: hsl(0,0%,60%);
       --container-color: hsl(0);
+
+          /*========== Fuentes y Tipografias ================*/
+
+              /* 0.5rem = 8px / 1rem = 16px ...*/
+       
+          --body-font: "Poppins", sans-serif;
+          --second-font: "Montserrat", sans-serif;
+          --biggest-font-size: 2.75rem;
+          --h1-font-size: 1,5rem;
+   
     }
 
-  
-
- 
 /*Base de la pagina (Tamaño)*/
 *{
   box-sizing: border-box;
@@ -80,18 +87,29 @@ img{
   height: auto;
 }
 
-/*button*/
+/* ======== Clases de css reutilizables =====*/
 
-.abrir-menu{
-  display: none;
-
+.container{
+    max-width: 1120px;
+    margin-inline: 1.5rem;
 }
 
-
-/*Responsive del boton */
-
-@media screen and (max-width: 654px){
-  .abrir-menu{
-    display: block;
-  }
+.grid{
+    display: grid;
+    gap: 1.5rem;
 }
+
+section{
+    padding-block: 5rem 1rem; /*padding es el espacio interno entre el contenido de un elemento y su borde. */ /*padding-block es una forma moderna y específica de definir padding vertical:*/
+}
+
+.section__title{
+    text-align: center;
+    font-size: var(--h1-font-size);
+    margin-bottom: 1.5rem;
+}
+
+.main{
+    overflow: hidden;  /*para las animaciones scroll*/    /*overflow Hace que todo el contenido que se salga de los límites del elemento quede oculto.*/
+}
+
