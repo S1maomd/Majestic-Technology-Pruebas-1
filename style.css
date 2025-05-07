@@ -1,3 +1,15 @@
+/*Fuentes de google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/*.cuprum-<uniquifier> {
+  font-family: "Cuprum", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+
 /* Para hacer el reset que es eliminar los parametros de cualquier navegador colocamos el (*)*/
 
 *{
@@ -10,7 +22,7 @@
 /*body para elegir el tipo de letra*/
 
 body{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Cuprum", sans-serif;;
   margin: 0;
   padding: 0;
   background-color: #fff;
