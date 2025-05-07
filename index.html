@@ -15,15 +15,51 @@
     <!--Este es ek titulo de la pagina, no confundir con los h1-h6. Este es el titulo que se muestra en la pestaña del navegador-->
     <link rel="stylesheet" href="/Inicio.css">
     <!--Linkea/enlaza archivos de estilos u otros archivos que necesitamos en nuestro proyecto-->
-</head>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!--Para conectar la carpeta de icons-->
 
+
+   </head>
+    
 <body>
    <!--Header Encabezado de la pagina-->
   <header class="header" id="header">
    <!--Menu-->
      <nav class="nav container">
        <!--Img class logo para organizar el logo --> 
-      <a href="#" class="nav">Majestic Travel</a>     
+      <a href="#" class="logo">Majestic Travel</a>   
+      
+      <div class="nav nav__menu" id="nav-menu">
+         <ul class="nav__list">
+          
+            <li class="nav__item">
+               <a href="#Inicio" class="nav__link">Inicio</a>
+            </li>
+           
+            <li class="nav__item">
+               <a href="#Nosotros" class="nav__link">Nosotros</a>
+            </li>
+         
+            <li class="nav__item">
+               <a href="#Destinos" class="nav__link">Destinos</a>
+            </li>
+            <li class="nav__item">
+               <a href="#Hospedaje" class="nav__link">Hospedaje</a>
+            </li>
+           
+            <li class="nav__item">
+               <a href="#Caracteristicas" class="nav__link">Caracteristicas</a>
+            </li>
+         
+            <li class="nav__item">
+               <a href="#Contacto" class="nav__link">Contacto</a>
+            </li>
+         </ul>
+                  <!--Boton de cerrar menu-->
+                  <div class="nav__cerrar" id="nav__cerrar">
+                     
+                  </div>
+      </div>
     
 
 
@@ -41,6 +77,9 @@
 
     <!--Script src= para conectar la carpeta de java script --> 
   <script src="animacion.js"></script>
+   <!--para las animaciones scroll-->
+   <script src="https://unpkg.com/scrollreveal"></script>
+
 </body>
 </html>
 
