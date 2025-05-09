@@ -1,5 +1,5 @@
 /*===========Fuentes de google fonts==========*/
-@import url('https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@100..900&display=swap');
 
 
   /*============== variables css ===============*/
@@ -15,8 +15,14 @@
      --title-color: hsl(0, 0%,95%);
      --text-color:  hsl(0, 0%, 70%);
      --text-color-light: hsl(0, 0%, 60%);
-     --body-color: hsl(0,0%,60%);
-      --container-color: hsl(0);
+     --body-color: hsl(0,0%,0%);
+      --container-color: hsl(0, 0%, 8%);
+      --h1-font-size: 1.5rem;
+      --h2-font-size: 1.25rem;
+      --h3-font-size: 1rem;
+      --normal-font-size: .938rem;
+      --small-font-size: .813rem;
+      --smaller-font-size: .75rem;
 
           /*========== Fuentes y Tipografias ================*/
 
@@ -25,9 +31,38 @@
           --body-font: "Poppins", sans-serif;
           --second-font: "Montserrat", sans-serif;
           --biggest-font-size: 2.75rem;
-          --h1-font-size: 1,5rem;
+          --h1-font-size: 1.5rem;
    
-    }
+                /* === Grosor de las letras ===*/
+
+            --font-regular: 400;
+            --font-medium: 500;
+            --font-semi-bold: 600;
+     
+                    /*=== Z index === */
+
+                    --z-tooltip: 10;
+                    --z-fixed: 100;
+   
+        }
+              
+                /*Responsive de la tipografia */
+
+                @media screen and (min-width:1152px) {
+
+                  :root{
+                    --biggest-font-size: 5.5rem;
+                    --h1-font-size: 2.5rem;
+                     --h2-font-size: 1.5rem;
+                      --h3-font-size: 1.25rem;
+                       --normal-font-size: 1rem;
+                      --small-font-size: .875rem;
+                      --smaller-font-size: .813rem;
+                  }
+                }
+
+
+
 
 /*Base de la pagina (Tamaño)*/
 *{
@@ -113,3 +148,74 @@ section{
     overflow: hidden;  /*para las animaciones scroll*/    /*overflow Hace que todo el contenido que se salga de los límites del elemento quede oculto.*/
 }
 
+/*==== Header & Nav ======*/
+.header{
+  position: fixed;
+  width: 100%;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+}
+
+.nav{
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.logo{
+  color: var(--title-color);
+  font-family: var(--second-font);
+  font-weight: var(--font-semi-bold);
+}
+
+.nav__toggle, .nav__cerrar{
+  display: flex;
+  font-size: 1.25rem;
+  color: var(--title-color);
+  cursor: pointer;
+}
+
+     /*=== Responsive para celular ===*/
+
+     @media screen and (max-width:1023px){
+      .nav__menu{
+        position: fixed;
+        top: -110%;
+        left: 0;
+        background-color: hsl(0, 0%, 0%,.3);
+        width: 100%;
+        padding-block: 4rem;
+        backdrop-filter: blur(24px); /*se utiliza para aplicar un efecto visual a lo que está detrás de un elemento*/
+        -webkit-backdrop-filter: blur(24px); /*Para safari */
+        transition: top .4s;
+      }
+     }      
+     
+     .nav__list{
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      row-gap: 2.5rem
+     }
+
+     .nav__link{
+      color: var(--title-color);
+      font-family: var(--second-font);
+      font-weight: var(--font-medium);
+     }
+     
+    .nav__cerrar{
+      position: absolute;
+      top: 1rem;
+      right: 1.5rem;
+    }
+
+     .mostrar-menu{
+      top: 0;
+     }
+
+     
